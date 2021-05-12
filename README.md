@@ -13,4 +13,5 @@ The hostname or ip-address (if necessary, including webserver port), e.g. `192.1
 ### `<PASSWORD>` 
 
 The Netgear login password, encrypted by the follwing command:
+
 `echo $(echo "this is my password" | openssl enc -e -des3 -base64 -pass pass:mypasswd -pbkdf2)`
